@@ -1,0 +1,222 @@
+/* 
+dark background color (hero and footer) #1F2937
+hero secondary text, header link text 18px #E5E7EB
+header logo text 24px #F9FAF8
+
+button color, call to action bakground color #3882f6
+infromation header text 36px extra-bold #1F2937
+
+quote section backgrround color #E5E7EB
+quote text 36px light italic #1f2937
+
+*/
+
+
+/* .info, */
+/* .quote, */
+/* .call-to-action {
+    display: none;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+a {
+    color: white;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+    object-fit:cover;
+
+    
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header,
+.hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap :20px;
+    margin-left: auto;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+    justify-content: space-between;
+    gap: 30px;
+
+
+}
+
+.hero-text {
+    flex: 1;
+    /* flex-basis: 400px; */
+    align-content: center;
+
+}
+
+.hero-text>p {
+    color: #E5E7EB;
+    font-size: 16px;
+
+}
+
+.hero-image-container {
+    display: flex;
+    flex: 1;
+    /* flex-basis: 1; */
+    /* max-width: 500px; */
+    flex-shrink: 1;
+    flex-grow: 1;
+
+}
+.hero-image {
+    flex: 1;
+    width: 600px;
+}
+
+
+.hero-button {
+    background-color: #3882f6;
+    padding: 10px 25px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+
+
+/* ==========================================INFOSECTION  */
+/* ======================================================= */
+
+.info {
+    padding-top: 45px;
+}
+
+.info-title {
+    /* 36px extra-bold #1F2937 */
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.info-galeri {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.info-galeri-section {
+    flex: 1;
+}
+
+
+
+.info-subtitle {
+    margin-top: 10px;
+    color: #1F2937 ;
+    text-align: center;
+}
+
+
+/* ==========================================QUOTESECTION  */
+/* ======================================================= */
+
+.quote{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 500px;
+    align-items: center;
+    /* margin: auto auto; */
+    background-color: #E5E7EB ;
+    font-size: 36px;  
+    color: #1f2937;
+    font-style: italic ;
+    font-weight: 200;
+}
+
+.quote-text {
+    width: 60%;
+    margin: auto;   
+    
+}
+.quote-author {
+    /* align-items: flex-end; */
+    text-align: right;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+
+/* ==========================================CALL TO ACTION SECTION  */
+/* ======================================================= */
+
+.call-to-action {
+
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8 ;
+    
+}
+
+.call-to-action-box {
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px 100px;
+    background-color: #3882f6;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.call-to-action-box > button {
+    height: 50px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    font-size: 20px;
+    border: 2px solid #F9FAF8;
+    border-radius: 5px;
+    padding: 0 20px;
+
+}
